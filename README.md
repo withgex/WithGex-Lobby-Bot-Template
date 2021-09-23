@@ -3,7 +3,8 @@
 https://github.com/withgex/Lobby-Bot-Template.git</p>
 
 ## 🌌 Como Instalar
-- Herramientas: [NPM](https://npmjs.com/get-npm), [NodeJS](https://nodejs.org)
+- Lenguaje: [NPM](https://npmjs.com/get-npm), [NodeJS](https://nodejs.org)
+- Herramientas:[Discord Bot](), [Discord Calculator](https://discordapi.com/permissions.html#523328), [Replit](https://replit.com/), [Epic Games](https://epicgames.com/id/register), [Gex Monitor](https://withgex.wixsite.com/gexpinger)
 
 1) Clone el repositorio
 
@@ -21,7 +22,7 @@ or run `INSTALL.sh`
 4) Navegue a la ventana del bot, copie el token. ¡Recuerda ** NO ** compartir el token con nadie! Esto resultará en que su cuenta de bot se vea comprometida.
 
 
-5) Visita esta [página](https://discordapi.com/permissions.html) para invitar al bot a tu servidor: https://discordapi.com/permissions.html
+5) Visita esta [página](https://discordapi.com/permissions.html#523328) para invitar al bot a tu servidor: https://discordapi.com/permissions.html#523328
 
 6) Inserte el **Client ID** del bot
 
