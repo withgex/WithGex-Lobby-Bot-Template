@@ -48,7 +48,7 @@ Y Presiona `ENTER`!
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
-13) Una vez copiado el link, crea un nuevo monitor **HTTP(s)** en : https://withgex.wixsite.com/gexpinger
+13) Una vez copiado el link, crea un nuevo monitor **HTTP(s)** en : https://withgex.wixsite.com/monitor
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
