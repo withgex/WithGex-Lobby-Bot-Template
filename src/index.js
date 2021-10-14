@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const config = require('./config');
-require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://uptimerobot.com/`)).listen(3000);
+require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://withgex.wixsite.com/monitor/`)).listen(3000);
 const { Collection } = require('discord.js');
 const { Client, Enums } = require('fnbr');
 const { readFile, writeFile } = require('fs').promises;
