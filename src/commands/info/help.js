@@ -41,7 +41,7 @@ module.exports = {
     const embed = new MessageEmbed()
     .setColor('RANDOM')
     .setAuthor('Commands')
-    .setDescription(`Here's a list of available commands, use \`${prefix}help <command>\` to view more about a command.\n[Join our Discord server!](https://linkfly.to/withgex)`)
+    .setDescription(`Here's a list of available commands, use \`${prefix}help <command>\` to view more about a command.\n[Join our Discord server!](https://dsc.gg/gextools)`)
     .addField(`Client [${commands.client.size}]`, commands.client.map(x => `\`${x.name}\``).join(', '))
     .addField(`Party [${commands.party.size}]`, commands.party.map(x => `\`${x.name}\``).join(', '))
     .addField(`Cosmetic [${commands.cosmetic.size}]`, commands.cosmetic.map(x => `\`${x.name}\``).join(', '))
