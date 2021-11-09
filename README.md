@@ -43,7 +43,8 @@ or run `INSTALL.sh`
 Y Presiona `ENTER`!
 
 ## 🌌 Plantilla de Servidor de Discord Gratuita
-```https://bit.ly/3ogqwGq
+```
+https://bit.ly/3ogqwGq
 ```
 
 ## 🌌 Hostear Bot 24/7
