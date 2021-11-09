@@ -42,6 +42,10 @@ or run `INSTALL.sh`
 
 Y Presiona `ENTER`!
 
+## 🌌 Plantilla de Servidor de Discord Gratuita
+
+[Plantilla:](https://bit.ly/3ogqwGq) https://bit.ly/3ogqwGq
+
 ## 🌌 Hostear Bot 24/7
 
 12) Finalmente si quiere hoestar el bot las **24/7h** copia el link que salga en el host.
