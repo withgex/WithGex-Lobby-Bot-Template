@@ -30,18 +30,18 @@ or run `INSTALL.sh`
 
 7) Haga clic en el enlace para invitar el bot.
 
-## 🌌 Plantilla de Servidor de Discord Gratuita
+8) Plantilla de Servidor de Discord Gratuita
 Utiliza nuestra plantilla creada para crear tu propio servidor de discord:
 ```
 https://bit.ly/3ogqwGq
 ```
-8) [Crea](https://epicgames.com/id/register) una cuenta de Epic Games para el bot: https://epicgames.com/id/register
+9) [Crea](https://epicgames.com/id/register) una cuenta de Epic Games para el bot: https://epicgames.com/id/register
 
-9) Configure el bot en `config.js` e ingrese el código de autorización al comenzar [aquí](https://www.epicgames.com/id/logout?redirectUrl=https%3A//www.epicgames.com/id/login%3FredirectUrl%3Dhttps%253A%252F%252Fwww.epicgames.com%252Fid%252Fapi%252Fredirect%253FclientId%253D3446cd72694c4a4485d81b77adbb2141%2526responseType%253Dcode).
+10) Configure el bot en `config.js` e ingrese el código de autorización al comenzar [aquí](https://www.epicgames.com/id/logout?redirectUrl=https%3A//www.epicgames.com/id/login%3FredirectUrl%3Dhttps%253A%252F%252Fwww.epicgames.com%252Fid%252Fapi%252Fredirect%253FclientId%253D3446cd72694c4a4485d81b77adbb2141%2526responseType%253Dcode).
 
-10) ¡Ahora ejecute `START.bat`,` run.sh` o `npm start` en el símbolo del sistema / terminal!
+11) ¡Ahora ejecute `START.bat`,` run.sh` o `npm start` en el símbolo del sistema / terminal!
 
-11) Solicite el código de autorización, coloque esta parte ** SOLAMENTE **.
+12) Solicite el código de autorización, coloque esta parte ** SOLAMENTE **.
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/748522409371631688/749387761903075408/download.png"><img src="https://cdn.discordapp.com/attachments/748522409371631688/749387761903075408/download.png" width="1000px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
@@ -50,11 +50,11 @@ Y Presiona `ENTER`!
 
 ## 🌌 Hostear Bot 24/7
 
-12) Finalmente si quiere hoestar el bot las **24/7h** copia el link que salga en el host.
+13) Finalmente si quiere hoestar el bot las **24/7h** copia el link que salga en el host.
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
-13) Una vez copiado el link, crea un nuevo monitor **HTTP(s)** en : https://withgex.wixsite.com/monitor
+14) Una vez copiado el link, crea un nuevo monitor **HTTP(s)** en : https://withgex.wixsite.com/monitor
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
