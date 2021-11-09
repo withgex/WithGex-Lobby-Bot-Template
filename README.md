@@ -32,9 +32,7 @@ or run `INSTALL.sh`
 
 8) Plantilla de Servidor de Discord Gratuita
 Utiliza nuestra plantilla creada para crear tu propio servidor de discord:
-```
-https://bit.ly/3ogqwGq
-```
+- https://bit.ly/3ogqwGq
 9) [Crea](https://epicgames.com/id/register) una cuenta de Epic Games para el bot: https://epicgames.com/id/register
 
 10) Configure el bot en `config.js` e ingrese el código de autorización al comenzar [aquí](https://www.epicgames.com/id/logout?redirectUrl=https%3A//www.epicgames.com/id/login%3FredirectUrl%3Dhttps%253A%252F%252Fwww.epicgames.com%252Fid%252Fapi%252Fredirect%253FclientId%253D3446cd72694c4a4485d81b77adbb2141%2526responseType%253Dcode).
