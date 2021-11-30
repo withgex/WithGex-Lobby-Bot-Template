@@ -15,7 +15,7 @@ module.exports = {
         eid:'EID_Floss', 
         pickaxe_id: 'Pickaxe_LockJaw', 
 
-        status: ' 🌌 Crea tu bot en: linkfly.to/withgex ', 
+        status: ' 🌌 Crea tu bot en: dsc.gg/gex ', 
         platform: 'PSN', 
 
         acceptFriend: true,
