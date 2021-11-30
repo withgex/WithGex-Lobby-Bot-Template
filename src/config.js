@@ -20,6 +20,6 @@ module.exports = {
 
         acceptFriend: true,
         acceptInvite: true,
-        joinMessage: '- Para utlizar el bot entra en: https://dsc.gg/gextools                         - Crea tu propio bot fácil en: https://linkfly.to/lobbybot'
+        joinMessage: '- Para utlizar el bot entra en: https://dsc.gg/gex                         - Crea tu propio bot fácil en: https://dsc.gg/gex'
     }
 }
