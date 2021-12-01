@@ -34,7 +34,7 @@ module.exports = {
        Aliases ➟ **${command.aliases ? command.aliases.map(x => x).join(', ') : 'None'}**
        Usage ➟ **${command.usage ? command.usage : 'None'}**
        Example ➟ **${prefix}${command.name} ${command.example}**
-       [Join our Discord server!](https://linkfly.to/withgex)`)
+       [Join our Discord server!](https://dsc.gg/gex)`)
        .setFooter(`Gex Lobby Bot | ${client.commands.size} commands`, 'https://cdn.discordapp.com/attachments/870706096560562297/887764879774191696/gex_lobby.png');
        message.channel.send(cmdEmbed);
     } else {
