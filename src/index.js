@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const config = require('./config');
-require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://withgex.wixsite.com/monitor/`)).listen(3000);
+require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://withgex.wixsite.com/monitor`)).listen(3000);
 const { Collection } = require('discord.js');
 const { Client, Enums } = require('fnbr');
 const { readFile, writeFile } = require('fs').promises;
@@ -35,7 +35,7 @@ async function getCosmetic(name, backend) {
 
   ['command'].forEach(handler => {
     require(`./${handler}`)(client);
-  });
+  }); 
 
   try {
     Options.auth.deviceAuth = JSON.parse(await readFile('./deviceAuth.json'));
@@ -59,11 +59,12 @@ async function getCosmetic(name, backend) {
     if (!command) command = client.commands.get(client.aliases.get(cmd));
 
     if (command) {
-      if (!bot.party) return message.channel.send('I am not in a party, please wait!');
+      if (!bot.party) return message.channel.send('No estoy en una fiesta, ¡por favor espera!');
       command.run(client, bot, message, args, getCosmetic);
     }
   });
 
+ if (config.discord.token === 'TOKEN') return console.log('-------------- Discord Token Bot --------------');
   if (config.discord.token === 'TOKEN') return console.log('[WITHGEX] [DISCORD]', 'Please enter a valid token in config.js');
 
   bot.on('deviceauth:created', (da) => writeFile('./deviceAuth.json', JSON.stringify(da, null, 2)));
@@ -117,13 +118,14 @@ async function getCosmetic(name, backend) {
   await bot.login();
   client.login(config.discord.token);
 
+
   client.on('ready', () => {
+    console.log('\x1b[36m', '---------------------- [ WithGex Lobby Bot ]----------------------' ,'\x1b[0m')
+    console.log('\x1b[36m', '----------------- [ Support: https://dsc.gg/gex ]-----------------' ,'\x1b[0m')   
     const replaced = config.discord.status.replace('%clientUserDisplayName%', bot.user.displayName).replace('%PartyMemberCount%', bot.party.members.size).replace('%ClientPartyUserOutfit%', bot.party.me.outfit)
     .replace('%ClientPartyUserPickaxe%', bot.party.me.pickaxe).replace('%ClientPartyUserEmote%', bot.party.me.emote).replace('%ClientPartyUserBackpack%', bot.party.me.backpack)
     .replace('%ClientPartyUserIsReady%', bot.party.me.isReady).replace('%ClientPartyUserIsLeader%', bot.party.me.isLeader).replace('%ClientUserID%', bot.id);
-
-    client.user.setActivity(replaced, { type: config.discord.statusType });
-
+    client.user.setActivity(replaced, { type: config.discord.statusType }); 
     console.log('[WITHGEX] [DISCORD]', `Client ready as ${client.user.tag} [${client.commands.size} commands]`);
     console.log('[WITHGEX] [FORTNITE]', `Client ready as ${bot.user.displayName}.`);
   });
