@@ -2,10 +2,10 @@ const Discord = require('discord.js');
 const fetch = require('node-fetch');
 const mySecret = process.env['TOKEN']
 const config = require('./config');
-require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://withgex.wixsite.com/monitor`)).listen(3000);
 const { Collection } = require('discord.js');
 const { Client, Enums } = require('fnbr');
 const { readFile, writeFile } = require('fs').promises;
+const { keep_alive } = require("./keep_alive");
 
 async function getCosmetic(name, backend) {
   const url = 'https://fortnite-api.com/v2/cosmetics/br/search' +
@@ -65,8 +65,10 @@ async function getCosmetic(name, backend) {
     }
   });
 
-  console.log('\x1b[36m', '---------------------- [ WithGex Lobby Bot ]----------------------' ,'\x1b[0m')
-  console.log('\x1b[36m', '----------------- [ Support: https://dsc.gg/gex ]-----------------' ,'\x1b[0m')   
+  console.log('\x1b[36m', '╔══════════════════════ [ WithGex Lobby Bot ] ═══════════════════════════╗' ,'\x1b[0m')
+  console.log('\x1b[36m', '╚══════════════════ [ Support: https://dsc.gg/gex ]══════════════════════╝' ,'\x1b[0m')
+  console.log('► Visit my website: https://withgex.wixsite.com/tools')
+  console.log('\x1b[36m', '▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' ,'\x1b[0m')    
 
   if (process.env['TOKEN'] === 'TOKEN') return console.log('[WITHGEX] [DISCORD]', 'Please enter a valid token in Secrets(.env) or config.js');
 
@@ -121,13 +123,12 @@ async function getCosmetic(name, backend) {
   await bot.login();
   client.login(process.env['TOKEN']);
 
-
   client.on('ready', () => {
-
+    
     const replaced = config.discord.status.replace('%clientUserDisplayName%', bot.user.displayName).replace('%PartyMemberCount%', bot.party.members.size).replace('%ClientPartyUserOutfit%', bot.party.me.outfit)
     .replace('%ClientPartyUserPickaxe%', bot.party.me.pickaxe).replace('%ClientPartyUserEmote%', bot.party.me.emote).replace('%ClientPartyUserBackpack%', bot.party.me.backpack)
     .replace('%ClientPartyUserIsReady%', bot.party.me.isReady).replace('%ClientPartyUserIsLeader%', bot.party.me.isLeader).replace('%ClientUserID%', bot.id);
-    client.user.setActivity(replaced, { type: config.discord.statusType }); 
+    client.user.setActivity("Bot developed at dsc.gg/gex");
     console.log('[WITHGEX] [DISCORD]', `Client ready as ${client.user.tag} [${client.commands.size} commands]`);
     console.log('[WITHGEX] [FORTNITE]', `Client ready as ${bot.user.displayName}.`);
   });
