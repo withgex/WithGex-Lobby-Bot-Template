@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const fetch = require('node-fetch');
+const mySecret = process.env['TOKEN']
 const config = require('./config');
 require('http').createServer((req, res) => res.end(`COPIA EL LINK DE ARRIBA Y PEGALO EN https://withgex.wixsite.com/monitor`)).listen(3000);
 const { Collection } = require('discord.js');
@@ -59,7 +60,7 @@ async function getCosmetic(name, backend) {
     if (!command) command = client.commands.get(client.aliases.get(cmd));
 
     if (command) {
-      if (!bot.party) return message.channel.send('No estoy en una fiesta, ¡por favor espera!');
+      if (!bot.party) return message.channel.send('No estoy en partida, ¡por favor espera!');
       command.run(client, bot, message, args, getCosmetic);
     }
   });
@@ -67,7 +68,7 @@ async function getCosmetic(name, backend) {
   console.log('\x1b[36m', '---------------------- [ WithGex Lobby Bot ]----------------------' ,'\x1b[0m')
   console.log('\x1b[36m', '----------------- [ Support: https://dsc.gg/gex ]-----------------' ,'\x1b[0m')   
 
-  if (config.discord.token === 'TOKEN') return console.log('[WITHGEX] [DISCORD]', 'Please enter a valid token in config.js');
+  if (process.env['TOKEN'] === 'TOKEN') return console.log('[WITHGEX] [DISCORD]', 'Please enter a valid token in Secrets(.env) or config.js');
 
   bot.on('deviceauth:created', (da) => writeFile('./deviceAuth.json', JSON.stringify(da, null, 2)));
 
@@ -118,7 +119,7 @@ async function getCosmetic(name, backend) {
   });
 
   await bot.login();
-  client.login(config.discord.token);
+  client.login(process.env['TOKEN']);
 
 
   client.on('ready', () => {
