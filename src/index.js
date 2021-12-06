@@ -64,7 +64,9 @@ async function getCosmetic(name, backend) {
     }
   });
 
- if (config.discord.token === 'TOKEN') return console.log('-------------- Discord Token Bot --------------');
+  console.log('\x1b[36m', '---------------------- [ WithGex Lobby Bot ]----------------------' ,'\x1b[0m')
+  console.log('\x1b[36m', '----------------- [ Support: https://dsc.gg/gex ]-----------------' ,'\x1b[0m')   
+
   if (config.discord.token === 'TOKEN') return console.log('[WITHGEX] [DISCORD]', 'Please enter a valid token in config.js');
 
   bot.on('deviceauth:created', (da) => writeFile('./deviceAuth.json', JSON.stringify(da, null, 2)));
@@ -120,8 +122,7 @@ async function getCosmetic(name, backend) {
 
 
   client.on('ready', () => {
-    console.log('\x1b[36m', '---------------------- [ WithGex Lobby Bot ]----------------------' ,'\x1b[0m')
-    console.log('\x1b[36m', '----------------- [ Support: https://dsc.gg/gex ]-----------------' ,'\x1b[0m')   
+
     const replaced = config.discord.status.replace('%clientUserDisplayName%', bot.user.displayName).replace('%PartyMemberCount%', bot.party.members.size).replace('%ClientPartyUserOutfit%', bot.party.me.outfit)
     .replace('%ClientPartyUserPickaxe%', bot.party.me.pickaxe).replace('%ClientPartyUserEmote%', bot.party.me.emote).replace('%ClientPartyUserBackpack%', bot.party.me.backpack)
     .replace('%ClientPartyUserIsReady%', bot.party.me.isReady).replace('%ClientPartyUserIsLeader%', bot.party.me.isLeader).replace('%ClientUserID%', bot.id);
