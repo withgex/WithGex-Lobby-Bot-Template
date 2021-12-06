@@ -2,9 +2,9 @@
   "name": "FN-LobbyBot-Template",
   "version": "1.8.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "main/index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node main/index.js"
   },
   "keywords": [
     "fortnite",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.3.1",
+    "express": "^4.17.1",
     "fnbr": "^1.4.1",
     "node-fetch": "^2.6.1"
   }
