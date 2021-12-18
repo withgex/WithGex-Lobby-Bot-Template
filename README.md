@@ -1,4 +1,4 @@
-## Gex Tools / Fortnite Lobby Bot
+## Gex Tools / FN Bot Template (Spanish)
 <p align="center">Un bot de Discord conectado a Fortnite que responde a los comandos que envías, a través de un canal de texto.
 https://github.com/withgex/withgex-Lobby-Bot-Template.git</p>
 
