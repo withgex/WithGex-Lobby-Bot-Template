@@ -22,7 +22,8 @@ or run `INSTALL.sh`
 4) Navegue a la ventana del bot, copie el token. ¡Recuerda ** NO ** compartir el token con nadie! Esto resultará en que su cuenta de bot se vea comprometida.
 
 
-5) Visita esta [página](https://discordapi.com/permissions.html#523328) para invitar al bot a tu servidor: https://discordapi.com/permissions.html#523328
+5) Visita esta [página](https://discordapi.com/permissions.html#523328) para invitar al bot a tu servidor: https://discordapi.com/permissions.html#523328![68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3837303730363039363536303536323239372f3838383839313131313238323732303832382f4c4f474f5844313030583130302e6a7067](https://user-images.githubusercontent.com/89141668/146625762-5454567b-06dc-4921-bfa7-8e8a1f76ce73.jpg)
+
 
 6) Inserte el **Client ID** del bot
 
@@ -50,15 +51,13 @@ Y Presiona `ENTER`!
 
 13) Finalmente si quiere hoestar el bot las **24/7h** copia el link que salga en el host.
 
-<td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/888962279897464913/Captura.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
-
 14) Una vez copiado el link, crea un nuevo monitor **HTTP(s)** en : https://withgex.wixsite.com/monitor
 
 <td align="left"><a href="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG"><img src="https://cdn.discordapp.com/attachments/870706096560562297/890679956382814208/monitor.JPG" width="600px;" alt=""/><br /><sub><b></b></sub></a><br /><a title=""></a></td>
 
 ## 🌌 Soporte
 Soporte: 
-https://linkfly.to/withgex
+https://dsc.gg/gex
 
 ##  🌌 Creditos
 [Gex] (https://github.com/withgex) 
